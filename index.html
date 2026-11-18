@@ -59,7 +59,7 @@ footer{text-align:center;color:var(--mute);font-size:13px;padding:20px 16px 32px
     <div class="q"><label>6. Место выдачи загранпаспорта <span class="req">*</span></label><input type="text" name="6. Место выдачи загранпаспорта" required></div>
     <div class="q"><label>7. Был ли у вас потерян или украден паспорт? <span class="req">*</span></label>
       <div class="radios"><label><input type="radio" name="7. Паспорт терялся/украден" value="Нет" required> Нет</label><label><input type="radio" name="7. Паспорт терялся/украден" value="Да"> Да</label></div>
-      <textarea name="7а. Если да — когда и где" placeholder="Если да — когда и где" style="margin-top:8px;min-height:56px"></textarea></div>
+      <textarea name="7а. Если да — когда и где" required placeholder="Если да — когда и где. Если нет — напишите «нет»" style="margin-top:8px;min-height:56px"></textarea></div>
 
     <h2>Работа и учёба</h2>
     <div class="q"><label>8. Место работы <span class="req">*</span></label><small>Опыт работы, полный адрес с контактами, ФИО и телефон руководителя</small><textarea name="8. Место работы" required></textarea></div>
@@ -67,27 +67,27 @@ footer{text-align:center;color:var(--mute);font-size:13px;padding:20px 16px 32px
 
     <h2>Семья</h2>
     <div class="q"><label>10. Адрес проживания семьи <span class="req">*</span></label><small>Страна, область, город, улица, дом, квартира, мобильный телефон</small><textarea name="10. Адрес проживания семьи" required></textarea></div>
-    <div class="q"><label>11. Супруг / супруга</label><small>ФИО, дата и место рождения, гражданство, место работы и телефон</small><textarea name="11. Супруг(а)"></textarea></div>
-    <div class="q"><label>12. Дети</label><small>ФИО, дата и место рождения, профессия, где проживают, гражданство</small><textarea name="12. Дети"></textarea></div>
+    <div class="q"><label>11. Супруг / супруга <span class="req">*</span></label><small>ФИО, дата и место рождения, гражданство, место работы и телефон</small><textarea name="11. Супруг(а)" required placeholder="Если нет — напишите «нет»"></textarea></div>
+    <div class="q"><label>12. Дети <span class="req">*</span></label><small>ФИО, дата и место рождения, профессия, где проживают, гражданство</small><textarea name="12. Дети" required placeholder="Если нет — напишите «нет»"></textarea></div>
     <div class="q"><label>13. Родители <span class="req">*</span></label><small>ФИО, дата рождения, где проживают, гражданство</small><textarea name="13. Родители" required></textarea></div>
     <div class="q"><label>14. Были ли ваши родители в Китае? <span class="req">*</span></label>
       <div class="radios"><label><input type="radio" name="14. Родители были в Китае" value="Нет" required> Нет</label><label><input type="radio" name="14. Родители были в Китае" value="Да"> Да</label></div></div>
-    <div class="q"><label>15. Есть ли у вас прямые родственники в Китае (кроме родителей)?</label><small>Если да — кто, ФИО, город</small><textarea name="15. Родственники в Китае" style="min-height:56px"></textarea></div>
+    <div class="q"><label>15. Есть ли у вас прямые родственники в Китае (кроме родителей)? <span class="req">*</span></label><small>Если да — кто, ФИО, город</small><textarea name="15. Родственники в Китае" required placeholder="Если нет — напишите «нет»" style="min-height:56px"></textarea></div>
 
     <h2>Поездки</h2>
     <div class="q"><label>16. Были ли вы в Китае? <span class="req">*</span></label>
       <div class="radios"><label><input type="radio" name="16. Был(а) в Китае" value="Нет" required> Нет</label><label><input type="radio" name="16. Был(а) в Китае" value="Да"> Да</label></div></div>
-    <div class="q"><label>17. Когда были в Китае в последний раз?</label><small>Год, категория визы, города, номер визы. Фото старой визы можно отправить нам в WhatsApp</small><textarea name="17. Последняя поездка в Китай"></textarea></div>
-    <div class="q"><label>18. Действующие визы в другие страны</label><small>Перечислите страны</small><textarea name="18. Действующие визы" style="min-height:56px"></textarea></div>
-    <div class="q"><label>19. В каких странах были за последние 5 лет?</label><textarea name="19. Страны за 5 лет" style="min-height:56px"></textarea></div>
+    <div class="q"><label>17. Когда были в Китае в последний раз? <span class="req">*</span></label><small>Год, категория визы, города, номер визы. Фото старой визы можно отправить нам в WhatsApp</small><textarea name="17. Последняя поездка в Китай" required placeholder="Если нет — напишите «нет»"></textarea></div>
+    <div class="q"><label>18. Действующие визы в другие страны <span class="req">*</span></label><small>Перечислите страны</small><textarea name="18. Действующие визы" required placeholder="Если нет — напишите «нет»" style="min-height:56px"></textarea></div>
+    <div class="q"><label>19. В каких странах были за последние 5 лет? <span class="req">*</span></label><textarea name="19. Страны за 5 лет" required placeholder="Если нет — напишите «нет»" style="min-height:56px"></textarea></div>
 
     <h2>Контакт на экстренный случай</h2>
     <div class="q"><label>20. Родственник для связи в случае ЧП <span class="req">*</span></label><small>ФИО, кем приходится, номер телефона</small><textarea name="20. Контакт ЧП" required style="min-height:56px"></textarea></div>
-    <div class="q"><label>21. Комментарий (если хотите что-то добавить)</label><textarea name="21. Комментарий" style="min-height:56px"></textarea></div>
+    <div class="q"><label>21. Комментарий <span class="req">*</span></label><textarea name="21. Комментарий" required placeholder="Если нет — напишите «нет»" style="min-height:56px"></textarea></div>
 
     <button type="submit">Отправить анкету</button>
   </form>
 </main>
-<footer>Kyzmat Travel · Бишкек, ул. Исанова 79, БЦ «79», офис 101<br>+996 555 555 372 · +996 224 222 222 (WhatsApp)</footer>
+<footer>Kyzmat Travel · Бишкек, ул. Исанова 79, БЦ «79», офис 101<br>Вопросы по анкете: +996 222 222 996 (WhatsApp)</footer>
 </body>
 </html>
